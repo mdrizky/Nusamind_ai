@@ -1,0 +1,28 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class ExportDescription extends Model
+{
+    const UPDATED_AT = null;
+
+    protected $fillable = [
+        'user_id',
+        'product_id',
+        'target_language',
+        'original_text',
+        'translated_text',
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class);
+    }
+}
