@@ -1,4 +1,4 @@
--- Nusamind AI - Supabase PostgreSQL Schema (UUID-based)
+-- Nusamind AI - Supabase PostgreSQL Schema
 -- Compatible with Supabase PostgreSQL 15+
 -- UUID-based auth.users integration
 -- Complete RLS policies for all tables with admin bypass
